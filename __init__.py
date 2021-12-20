@@ -20,5 +20,4 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
                 strin = strin + " "  + str(row[3])
                 row = cursor.fetchone()
 
-    print(strin)
     return func.HttpResponse(f"{strin}")
