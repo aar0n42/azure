@@ -10,7 +10,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     database = 'mySampleDatabase'
     username = 'azureuser'
     password = '{<pw>}'
-    driver= '{ODBC Driver 17 for SQL Server}'
+    driver= '{ODBC Driver 18 for SQL Server}'
     strin=""
     with pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password) as conn:
         with conn.cursor() as cursor:
